@@ -1,0 +1,32 @@
+{
+  "name": "sendotp-prommise",
+  "version": "1.0.0",
+  "description": "msg91 send otp promise wrapper",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "keywords": [
+    "SendOtp",
+    "Flow",
+    "Node",
+    "API",
+    "MSG91",
+    "MSG-91",
+    "MSG 91"
+  ],
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "mocha": "*",
+    "nock": "*"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "author": "Ashok Dey <ashokdey100@gmail.com> (ashokdey.in)",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.83.0"
+  }
+}
