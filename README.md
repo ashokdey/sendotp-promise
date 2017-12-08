@@ -1,20 +1,20 @@
-## SendOtp - Node.js SDK
+## SendOtp-Promise - Node.js SDK
 
-This SDK enables sendOTP and allows you to send OTP
+This SDK is the promise wrapper for **[SentOtp](https://github.com/MSG91/sendotp-node)** by MSG91
 
 ### Set-up:
 
 1. Download the NPM module
-```
-npm install sendotp --save
+```javascript
+npm install sendotp -S / yarn add sendotp-promise
 ```
 2. Require the package in your code.
-```
-const SendOtp = require('sendotp');
+```javascript
+const SendOTP = require('sendotp-promise'); / import SendOTP from 'sendotp-promise';
 ```
 3. Initialize with your [MSG91](https://msg91.com) auth key
-```
-const sendOtp = new SendOtp('AuthKey');
+```javascript
+const sendOtp = new SendOTP('AuthKey');
 ```
 That's all, your SDK is set up!
 
@@ -31,9 +31,23 @@ sendOtp.verify(contactNumber, otpToVerify, callback);
 
 To send OTP, without optional parameters
 ```javascript
+// normal callback
 sendOtp.send("919999999999", "PRIIND", function (error, data, response) {
   console.log(data);
 });
+
+// Using async-await 
+async function() {
+  try {
+    const response = await sendOtp.send("919999999999", "PRIIND");
+    // check success
+    if (reponse.type === 'success'){
+      // do what you wat on success
+    }
+  } catch (err) {
+    // handle error
+  }
+}
 ```
 
 To send OTP, with optional parameters
