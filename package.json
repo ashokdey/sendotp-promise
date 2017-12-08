@@ -1,5 +1,5 @@
 {
-  "name": "sendotp-prommise",
+  "name": "sendotp-promise",
   "version": "1.0.0",
   "description": "msg91 send otp promise wrapper",
   "main": "index.js",
@@ -8,6 +8,7 @@
   },
   "keywords": [
     "SendOtp",
+    "SendOtp promise",
     "Flow",
     "Node",
     "API",
