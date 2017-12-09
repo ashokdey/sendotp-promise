@@ -109,7 +109,7 @@ class SendOtp {
             params = {};
         }
         // Return promise if no callback is passed and promises available
-        else if (callback === undefined && this.allow_promise) {
+        else if (callback === undefined) {
             promise = true;
         }
 
