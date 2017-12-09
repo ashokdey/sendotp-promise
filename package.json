@@ -1,6 +1,6 @@
 {
   "name": "sendotp-promise",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "msg91 send otp promise wrapper",
   "main": "index.js",
   "scripts": {
