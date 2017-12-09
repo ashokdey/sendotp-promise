@@ -1,8 +1,6 @@
 ## SendOtp-Promise - Node.js SDK
 
-[![Build Status](https://travis-ci.org/ashokdey/sendotp-promise.svg?branch=master)](https://travis-ci.org/ashokdey/sendotp-promise)
-
-[![Maintainability](https://api.codeclimate.com/v1/badges/a68b653ec5036055e058/maintainability)](https://codeclimate.com/github/ashokdey/sendotp-promise/maintainability)
+[![Build Status](https://travis-ci.org/ashokdey/sendotp-promise.svg?branch=master)](https://travis-ci.org/ashokdey/sendotp-promise) &nbsp; [![Maintainability](https://api.codeclimate.com/v1/badges/a68b653ec5036055e058/maintainability)](https://codeclimate.com/github/ashokdey/sendotp-promise/maintainability)
 
 This SDK is the promise wrapper for **[SentOtp](https://github.com/MSG91/sendotp-node)** by MSG91
 
