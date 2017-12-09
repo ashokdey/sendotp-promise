@@ -51,7 +51,7 @@ class SendOtp {
      * Return promise if no callback is passed and promises available
      */
     send(contactNumber, senderId, otp, callback) {
-        if (typeof otp === 'function') {
+        if (!otp || typeof otp === 'function') {
             callback = otp;
             otp = SendOtp.generateOtp()
         }
