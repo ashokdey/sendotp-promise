@@ -30,24 +30,57 @@ sendOtp.verify(contactNumber, otpToVerify, callback);
 ### Usage:
 
 To send OTP, without optional parameters
+
 ```javascript
 // normal callback
 sendOtp.send("919999999999", "PRIIND", function (error, data, response) {
   console.log(data);
 });
 
-// Using async-await 
-async function() {
+```
+
+### Using async-await
+
+```javascript
+
+// ES6 import 
+import SendOTP from 'sendotp-promise';
+
+// using commonJS pattern
+// const SendOTP = require('sendotp-promise');
+
+const MSG91_AUTH_KEY = 'your auth key here';
+const MSG91_SENDER_ID = 'your sender id of 6 characters';
+
+// new instance of SendOTP
+const sendOtp = new SendOtp(MSG91_AUTH_KEY);
+
+// set the expiry for your OTP
+sendOtp.setOtpExpiry('60');
+
+const sendOtpToMobile = async (mobileNumber) => {
   try {
-    const response = await sendOtp.send("919999999999", "PRIIND");
-    // check success
-    if (reponse.type === 'success'){
-      // do what you wat on success
+    // call the send() method
+    const response = await sendOtp.send(mobile, MSG91_SENDER_ID);
+    console.log(response);
+    if (response.type === 'success') {
+      return console.log('OTP code sent');
     }
+
+    return console.log('Failed to sent OTP');
   } catch (err) {
-    // handle error
+    console.error(err);
+    return console.log('Something went wrong');
   }
-}
+};
+
+// the mobile number
+const countryCode = 'your country code';
+const mobileNumber = 'any mobile number';
+const completeMobileNumber = `${countryCode}${mobileNumber}`;
+
+// call 
+sendOtpToMobile(completeMobileNumber);
 ```
 
 To send OTP, with optional parameters
