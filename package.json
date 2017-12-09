@@ -1,6 +1,6 @@
 {
   "name": "sendotp-promise",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "msg91 send otp promise wrapper",
   "main": "index.js",
   "scripts": {
@@ -29,5 +29,13 @@
     "test": "test"
   },
   "author": "Ashok Dey <ashokdey100@gmail.com> (ashokdey.in)",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashokdey/sendotp-promise.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ashokdey/sendotp-promise/issues"
+  },
+  "homepage": "https://github.com/ashokdey/sendotp-promise#readme"
 }
