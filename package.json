@@ -16,6 +16,9 @@
     "MSG-91",
     "MSG 91"
   ],
+  "dependencies": {
+    "request": "^2.83.0"
+  },
   "devDependencies": {
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0",
@@ -26,8 +29,5 @@
     "test": "test"
   },
   "author": "Ashok Dey <ashokdey100@gmail.com> (ashokdey.in)",
-  "license": "ISC",
-  "dependencies": {
-    "request": "^2.83.0"
-  }
+  "license": "MIT"
 }
